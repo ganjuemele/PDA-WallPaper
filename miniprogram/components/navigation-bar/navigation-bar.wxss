@@ -1,0 +1,7 @@
+image.title-pic {
+  margin: 11.6vw 0 0 5.8vw;
+  width: 34.67vw;
+  height: 11.72vw;
+  position: absolute;
+  z-index: 91;
+}

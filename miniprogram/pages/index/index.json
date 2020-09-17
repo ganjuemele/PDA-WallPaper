@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "mp-navigation-bar": "../components/navigation-bar/navigation-bar",
+    "pic-view": "../components/picView/pic-view",
+    "toast": "../components/toast/toast"
+  },
+  "navigationStyle": "custom"
+}

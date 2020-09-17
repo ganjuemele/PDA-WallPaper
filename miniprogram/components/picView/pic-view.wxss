@@ -1,0 +1,65 @@
+.container {
+  padding: 30px 0 0 20px;
+  width: 100vw;
+  height: calc(100vh - 88px);
+}
+
+button, .container-bgc {
+  background: #f8c6c7;
+}
+
+.pic {
+  display: inline-flex;
+  width: 290px;
+  height: 517px;
+}
+button {
+  border: none;
+  padding: 0;
+  outline: none;
+  line-height: unset;
+}
+button::after {
+  border: none;
+}
+
+.op {
+  display: inline-flex;
+  flex-direction: column-reverse;
+  margin: 0 calc((100vw - 20px - 290px - 24px)/2);
+  justify-content: flex-end;
+  width: 24px;
+}
+
+.pic-op {
+  height: 41px;
+  width: 24px;
+}
+.btn-dl {
+  margin-top: 30px;
+  
+}
+.stick {
+  margin-right:8px;
+  width: 4px;
+  height: 18px;
+}
+.author {
+  font-size: 18px;
+  font-weight: bold;
+}
+.time {
+  font-size: 12px;
+  float: right;
+  display: block;
+  content:'';
+  overflow: hidden;
+}
+.info {
+  width:290px;
+  color: #282A2C;
+}
+.pic-info {
+  margin: 15px 0;
+  height:18px;
+}

@@ -1,0 +1,33 @@
+<mp-navigation-bar />
+
+<toast id='toast' />
+
+<swiper class="container" indicator-dots="{{false}}" autoplay="{{false}}" circular="true">
+  <swiper-item wx:for='{{picList}}' wx:key="{{item._id}}">
+
+    <view id="{{item._id}}" class="pic-content" style='background: {{item.bgc}}; '>
+      <view class="place-holder"></view>
+      <image src="{{item.picCloudURL}}" class="pic" data-picUrl="{{item.picCloudURL}}" bindtap="onPicPreview"/>
+      <view class="op">
+        <button class="btn-dl" bindtap="onPicDl" style='background: {{item.bgc}}' data-dl="true" data-picUrl="{{item.dlURL}}">
+            <image src="../../images/download2@2x.png" class="pic-op" />
+        </button>
+
+        <button open-type="share" style='background: {{item.bgc}}' data-picUrl="{{item.picCloudURL}}">
+            <image src="../../images/share3@2x.png" class="pic-op" />
+        </button>
+      </view>
+
+      <view class="info">
+        <view class="pic-info">
+          <image src="../../images/stick@2x.png" class="stick"></image>
+          <text class="author">{{item.painter}}</text>
+          <text class="time">{{item.date}}</text>
+        </view>
+        <text>{{item.about}}</text>
+      </view>
+
+    </view>
+    
+  </swiper-item>
+</swiper>

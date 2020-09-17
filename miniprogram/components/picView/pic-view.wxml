@@ -1,0 +1,8 @@
+<view class="container container-bgc">
+  <swiper indicator-dots="false" autoplay="false" circular="true">
+    <swiper-item v-for='{{picList}}'>
+         <text>{{item.about}}</text>
+      <image src="{{item.picCloudURL}}"></image>
+    </swiper-item>
+  </swiper>
+</view>

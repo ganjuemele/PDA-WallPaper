@@ -1,0 +1,13 @@
+<view class='wx-toast-box' animation="{{animationData}}">
+    <view class='wx-toast-content'>
+        <view class="load">
+            <image src="../../images/L@2x.png" class="loading-pic loading-picL" />
+            <image src="../../images/M@2x.png" class="loading-pic loading-picM" />
+            <image src="../../images/M@2x.png" class="loading-pic loading-picS" />
+        </view>
+
+        <view class='wx-toast-toast'>
+            {{ content }}
+        </view>
+    </view>
+</view>
